@@ -9,4 +9,3 @@ To begin, click Sign up and login in with your details
 <!-- Markdown Syntax -->
 <img src="https://github.com/qaim-b/CarbonTrackerApp/assets/92704157/6cb89622-b2d6-4e2b-8f34-0ac5e8e2c703)" alt="Image Description" width="190" height="380">
 
-![Uploading image.png…]()
