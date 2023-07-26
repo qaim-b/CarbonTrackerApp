@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2f2f2f"
+    tools:context=".recordFragment">
+
+    <Button
+        android:id="@+id/secondbutton"
+        android:layout_width="213dp"
+        android:layout_height="119dp"
+        android:text="Add trip emissions"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_baseline_directions_24"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="213dp"
+        android:layout_height="119dp"
+        android:layout_marginBottom="36dp"
+        android:text="Add carbon emissions manually"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_baseline_edit_24"
+        app:layout_constraintBottom_toTopOf="@+id/electricbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/electricbutton"
+        android:layout_width="213dp"
+        android:layout_height="119dp"
+        android:layout_marginBottom="172dp"
+        android:text="Add electric bill emissions"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_baseline_electric_bolt_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/manually_entered_emission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Enter emission value"
+        android:inputType="numberDecimal"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

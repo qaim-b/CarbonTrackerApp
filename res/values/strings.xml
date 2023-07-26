@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Carbonegy2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_3rd">3rd</string>
+    <string name="_1st">1st</string>
+    <string name="_2nd">2nd</string>
+    <string name="least_emissions_over_the_last_month">Least emissions over the last month</string>
+    <string name="_4th">4th</string>
+    <string name="_5th">5th</string>
+    <string name="_6th">6th</string>
+    <string name="nearby">Nearby</string>
+    <string name="friends">Friends</string>
+    <string name="_7th" />
+    <string name="_8th" />
+    <string name="_User1" />
+    <string name="user10">User10</string>
+    <string name="user9">User9</string>
+    <string name="user8">User8</string>
+    <string name="user7">User7</string>
+    <string name="user6">User6</string>
+    <string name="user5">User5</string>
+    <string name="user4">User4</string>
+    <string name="user3">User3</string>
+    <string name="user1">User1</string>
+    <string name="user2">User2</string>
+    <string name="_10th">10th</string>
+    <string name="_9th">9th</string>
+    <string name="funfact">Reducing your emissions by as low as 5% is equivalant to planting 300 trees</string>
+    <string name="city_name">dropDownMenuExample</string>
+    <string-array name="city">
+        <item>City</item>
+        <item>KL</item>
+        <item>Selangor</item>
+        <item>Melaka</item>
+        <item>Johor</item>
+        <item>Perak</item>
+    </string-array>
+</resources>

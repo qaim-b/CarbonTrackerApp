@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MonthlyEmissionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2f2f2f">
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/monthlychart"
+                    android:layout_width="380dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="30dp"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.516"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/monthlyemission"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/monthlyemission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="Your Monthly Emission"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/card"
+                    android:layout_width="380dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/box"
+                    android:fontFamily="@font/hind_guntur"
+                    android:includeFontPadding="true"
+                    android:paddingVertical="20dp"
+                    android:text="Your current goal is to reduce emissions by :"
+                    android:textAlignment="center"
+                    android:textColor="#CCCCCC"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/monthlychart"
+                    app:layout_constraintVertical_bias="0.031" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="188dp"
+                    android:layout_height="66dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginBottom="76dp"
+                    android:fontFamily="@font/hind_guntur"
+                    android:paddingTop="10dp"
+                    android:text="Edit Goal"
+                    android:textAlignment="center"
+                    android:textColor="#515151"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/card"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/card"
+                    app:layout_constraintVertical_bias="0.134" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

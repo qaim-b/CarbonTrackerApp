@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/firstFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/secondFragment"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        android:title="History" />
+
+    <item
+        android:id="@+id/placeholder"
+        android:title=""
+
+        />
+    <item
+        android:id="@+id/thirdFragment"
+        android:icon="@drawable/ic_baseline_leaderboard_24"
+        android:title="Leaderboard" />
+
+    <item
+        android:id="@+id/forthFragment"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile" />
+</menu>

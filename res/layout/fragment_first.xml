@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2f2f2f">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hind_guntur"
+        android:text="You're at"
+        android:textColor="#E5E5E5"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/progress_bar"
+        app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+        app:layout_constraintStart_toStartOf="@+id/progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/progress_bar"
+        app:layout_constraintVertical_bias="0.297" />
+
+    <TextView
+        android:id="@+id/percentageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hind_guntur"
+        android:text="75%"
+        android:textColor="#E5FF48"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/progress_bar"
+        app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/progress_bar"
+        app:layout_constraintVertical_bias="0.539" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="174dp"
+        android:layout_height="83dp"
+        android:fallbackLineSpacing="false"
+        android:fontFamily="@font/hind_guntur"
+        android:lineSpacingExtra="-10sp"
+        android:text="of this month's emissions goal"
+        android:textAlignment="center"
+        android:textColor="#E4E4E4"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/progress_bar"
+        app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+        app:layout_constraintStart_toStartOf="@+id/progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/progress_bar"
+        app:layout_constraintVertical_bias="0.829" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="453dp"
+        android:layout_height="448dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/text_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Recent records"
+                android:textColor="#C5C5C5"
+                android:textSize="28sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recordsrv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="60dp" />
+
+            <TextView
+                android:id="@+id/text_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Fun Fact!"
+                android:textColor="#C5C5C5"
+                android:textSize="28sp" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="?android:attr/listDivider"
+                android:backgroundTint="#C4C4C4" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/horizontalRv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="622dp"-->
+<!--        android:layout_height="182dp"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginTop="200dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/progress_bar">-->
+
+<!--        <HorizontalScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="93dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="253dp"-->
+<!--                    android:layout_height="92dp"-->
+<!--                    android:layout_marginLeft="90dp">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/funfact1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:fontFamily="@font/hind_guntur"-->
+<!--                        android:text="@string/funfact"-->
+<!--                        android:textAlignment="gravity"-->
+<!--                        android:textColor="@color/black" />-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="253dp"-->
+<!--                    android:layout_height="92dp"-->
+<!--                    android:layout_marginLeft="20dp">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/funfact2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:fontFamily="@font/hind_guntur"-->
+<!--                        android:text="@string/funfact"-->
+<!--                        android:textAlignment="gravity"-->
+<!--                        android:textColor="@color/black" />-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="253dp"-->
+<!--                    android:layout_height="92dp"-->
+<!--                    android:layout_marginLeft="20dp">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/funfact3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:fontFamily="@font/hind_guntur"-->
+<!--                        android:text="@string/funfact"-->
+<!--                        android:textAlignment="gravity"-->
+<!--                        android:textColor="@color/black" />-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="253dp"-->
+<!--                    android:layout_height="92dp"-->
+<!--                    android:layout_marginLeft="20dp">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/funfact4"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:fontFamily="@font/hind_guntur"-->
+<!--                        android:text="@string/funfact"-->
+<!--                        android:textAlignment="gravity"-->
+<!--                        android:textColor="@color/black" />-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="253dp"-->
+<!--                    android:layout_height="92dp"-->
+<!--                    android:layout_marginLeft="20dp">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/funfact5"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:fontFamily="@font/hind_guntur"-->
+<!--                        android:text="@string/funfact"-->
+<!--                        android:textAlignment="gravity"-->
+<!--                        android:textColor="@color/black" />-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--            </LinearLayout>-->
+<!--        </HorizontalScrollView>-->
+<!--    </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
