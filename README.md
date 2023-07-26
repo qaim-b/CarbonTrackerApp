@@ -7,4 +7,5 @@ To begin, click Sign up and login in with your details
 <img src="https://github.com/qaim-b/CarbonTrackerApp/assets/92704157/5cb153b2-7d92-4db8-b0e4-1b2a1e3891a4" alt="Image Description" width="180" height="380">
 
 <!-- Markdown Syntax -->
-<img src="[https://github.com/qaim-b/CarbonTrackerApp/assets/92704157/5cb153b2-7d92-4db8-b0e4-1b2a1e3891a4](https://github.com/qaim-b/CarbonTrackerApp/assets/92704157/d0f36d18-42ad-4a4d-8af6-7861fdd40ab0)https://github.com/qaim-b/CarbonTrackerApp/assets/92704157/d0f36d18-42ad-4a4d-8af6-7861fdd40ab0" alt="Image Description" width="180" height="380">
+<img src="https://github.com/qaim-b/CarbonTrackerApp/assets/92704157/9b8f0fd2-2f1d-4066-ad16-b187aeb2df41" alt="Image Description" width="180" height="380">
+
