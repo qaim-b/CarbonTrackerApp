@@ -11,3 +11,5 @@ To begin, click Sign up and login in with your details
 
 <img src="https://github.com/qaim-b/CarbonTrackerApp/assets/92704157/01c3a05c-50e2-4d71-959f-68b9a6f6262c" alt="Image Description" width="190" height="380">
 
+<img src="https://github.com/qaim-b/CarbonTrackerApp/assets/92704157/15d42ff8-5c8a-494a-9b9b-ab2211c0f3d6" alt="Image Description" width="190" height="380">
+
