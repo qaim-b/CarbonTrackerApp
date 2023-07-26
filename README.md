@@ -4,4 +4,4 @@ Hello, welcome top my Carbon Footprint App! The world's population keeps rising,
 
 
 <!-- Markdown Syntax -->
-<img src="![image](https://github.com/qaim-b/CarbonTrackerApp/assets/92704157/5cb153b2-7d92-4db8-b0e4-1b2a1e3891a4)" alt="Image Description" width="300" height="200">
+<img src="https://github.com/qaim-b/CarbonTrackerApp/assets/92704157/5cb153b2-7d92-4db8-b0e4-1b2a1e3891a4" alt="Image Description" width="300" height="200">
